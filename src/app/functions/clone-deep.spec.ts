@@ -44,8 +44,6 @@ describe('cloneDeep', () => {
         expect(clonedMap).not.toBe(map);
     });
 
-    // Add more test cases for other types like RegExp, ArrayBuffer, etc.
-
     // Test for nested objects
     it('should clone nested objects', () => {
         const nestedObj = { a: { b: { c: 1 } } };
@@ -63,5 +61,4 @@ describe('cloneDeep', () => {
         expect(clonedCircularObj.self).toBe(clonedCircularObj);
     });
 
-    // Add more test cases as needed
 });
